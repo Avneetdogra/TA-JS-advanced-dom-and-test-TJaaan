@@ -6,12 +6,12 @@ const {
   } = require('./index');
   
   test('test for full name', () => {
-    expect(getFullName('Rahul', 'Sharma')).toBe('Rahul Sharma');
-    expect(getFullName('Rahul', 'Sharma')).toBe('Rahul Sharma');
+    expect(getFullName('Avneet', 'Dogra')).toBe('Avneet Dogra');
+    expect(getFullName('Avneet', 'Dogra')).toBe('Avneet Dogra');
     expect(getFullName('Hello', 'World')).toBe('Hello World');
     expect(getFullName('Hello', 'World')).not.toBe('HelloWorld');
-    expect(getFullName('Rahul', 'Sharma')).not.toBe('RahulSharma');
-    expect(getFullName('Rahul', 'Sharma')).not.toBe('RahulSharma');
+    expect(getFullName('Avneet', 'Dogra')).not.toBe('AvneetDogra');
+    expect(getFullName('Avneet', 'Dogra')).not.toBe('AvneetDogra');
   });
   test('test for circumference of the circle', () => {
     expect(getCircumfrence(2)).toBe(`The circumference is 12.566370614359172`);
@@ -35,7 +35,7 @@ const {
     expect(palindrome('wow')).toBe(true);
     expect(palindrome('tat')).toBe(true);
     expect(palindrome('mom')).toBe(true);
-    expect(palindrome('Rahul')).not.toBe(true);
-    expect(palindrome('sharma')).not.toBe(true);
-    expect(palindrome('Rahul')).not.toBe(true);
+    expect(palindrome('Avneet')).not.toBe(true);
+    expect(palindrome('Dogra')).not.toBe(true);
+    expect(palindrome('Avneet')).not.toBe(true);
   });
