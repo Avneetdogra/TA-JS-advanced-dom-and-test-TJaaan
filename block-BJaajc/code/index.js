@@ -3,7 +3,7 @@ function getFullName(firstName, LastName) {
 }
 
 function palindrome(word) {
-  let Word = word.split('').reverse().join('');
+  let Word = word.split("").reverse().join("");
   if (Word === word) {
     return true;
   } else {
