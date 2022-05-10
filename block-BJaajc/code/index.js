@@ -1,27 +1,20 @@
-function getFullName(firstName, LastName) {
-  return `${firstName} ${LastName}`;
+function fullName( firstName, lastName ){
+  return firstName + " " + lastName;
 }
 
-function palindrome(word) {
-  let Word = word.split("").reverse().join("");
-  if (Word === word) {
-    return true;
-  } else {
-    return false;
-  }
+function isPalindrome( str ){
+  return str.reverse() === str;
 }
 
-function getCircumfrence() {
-  return `The Circumference is ${2 * Math.PI * radius}`;
+function getCircumfrence( radius){
+  let circumfrence = radius * 2;
+  return `The circumference is ${circumfrence}`;
 }
 
-function getArea(radius) {
-  return `The area i  s ${Math * radius * radius}`;
+function getArea( r){
+  const pi = 3.14;
+  let area = pi*(r**2);
+  return `The area is ${area}`
 }
 
-module.exports = {
-  getFullName,
-  palindrome,
-  getCircumfrence,
-  getArea,
-};
+module.exports = {fullName,isPalindrome,getCircumfrence,getArea};
